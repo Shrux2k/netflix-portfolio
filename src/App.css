@@ -1,8 +1,36 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.intro-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
 }
 
-h1 {
-    color: #333;
+.intro-text {
+    font-family: 'Bebas Neue', sans-serif;
+    /* Netflix-like font */
+    font-size: 4rem;
+    /* Adjust size as needed */
+    color: #e50914;
+    /* Netflix red color */
+    text-shadow: 0px 0px 20px rgba(229, 9, 20, 0.8), 0px 0px 50px rgba(229, 9, 20, 0.6);
+    animation: zoomIn 3s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
